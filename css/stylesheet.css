@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sancreek&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #564138;
+}
+
+h2, h3 {
+    font-family: 'Sancreek', cursive;
+    color: #564138;
+    line-height: 1.2;
+}
+
+a {
+    color: #564138;
+    text-decoration: none;
+    font-weight: 560;
+}
+
+a:hover {
+    color: #EB5E55;
+}
+
+/* this is our nav code*/
+
+.top-nav {
+    width: 1440px;
+    background-color: #D7CEB2;
+    margin: 0 auto;
+    padding: 1.5em 0;
+}
+
+.top-nav, .main-nav {
+    display: flex;
+}
+
+.main-nav {
+    margin: 0 auto;
+    padding: 35px 0;
+}
+
+.main-nav a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+ul {
+    font-weight: 650;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 60px;
+}
+
+/* this is our ticker css */
+
+    .ticker-container {
+        background-color: #C6D8D3;
+        width: 1440px;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .ticker-content {
+        display: inline-block;
+        color: #564138;
+        font-weight: 600;
+        animation: scroll-left 30s linear infinite;
+    }
+
+    .ticker-content span {
+        padding: 0 10px;
+        font-size: 1.1em;
+    }
+
+    @keyframes scroll-left {
+        0% { transform: translateX(100%); } 
+        100% { transform: translateX(-100%); } 
+    }
+
+/* this is our hero css */
+
+.hero-container {
+    background-image: url('../images/OakHarborHero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 746px;
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: #C6D8D3;
+    color: #564138;
+    padding: 10px 30px;
+    font-size: 1.0em;
+    border-radius: 54px;
+    font-weight: bold;
+    margin-top: 580px;
+}
+
+.btn:hover {
+    background-color: #EB5E55;
+    color: #C6D8D3;
+    transition: 0.3s;
+}
+
+/* this is our lineup container */
+
+.lineup-container {
+    flex-direction: row;
+    background-color: #C6D8D3;
+    margin: 0 auto;
+    width: 1440px;
+    padding: 20px 0;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.main-headliners {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.lineup-image1, .lineup-image2, .lineup-image3 {
+    width: 311.16px;
+    height: 327px;
+}
+
+.sub-headliners {
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.sub-headliners-row1, .sub-headliners-row2 {
+    justify-content: center;
+    text-align: center;
+    color: #564138;
+    font-size: 1.0em;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+ul .sub-headliners, .sub-headliners-row1, .sub-headliners-row2 {
+    list-style-image: url('../images/bullet.svg');
+}
+
+.btn2 {
+    background-color: #C6D8D3;
+    color: #564138;
+    padding: 10px 30px;
+    font-size: 1.0em;
+    border-radius: 54px;
+    border: 2px solid #EB5E55;
+    font-weight: bold;
+}
+
+.btn2:hover {
+    background-color: #EB5E55;
+    color: #C6D8D3;
+    transition: 0.3s;
+}
+
+/* this is our sponsors container */
+
+.sponsors-container {
+    background-color: #fff;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(235, 94, 85, 0.72);
+    width: 1440px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    color:#564138
+}
+
+.sponsor-images {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* this is our sponsor ticker css */
+
+    .sponsors-ticker-container {
+        background-color: rgba(235, 94, 85, 0.01);
+        width: 1440px;
+        height: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-bottom: 20px;
+    }
+
+    .sponsors-ticker-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #564138;
+        animation: scroll-left 25s linear infinite;
+        padding-bottom: 20px;
+    }
+
+    @keyframes scroll-left {
+        0% { transform: translateX(100%); } 
+        100% { transform: translateX(-100%); } 
+    }
+
+    .sponsor-image1, .sponsor-image2, .sponsor-image3, .sponsor-image4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+/* this is our footer container */
+
+.footer {
+    background-color: #D7CEB2;
+    justify-content: center;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.info, .left-info {
+    line-height: 1.8em;
+    text-align: left;
+    padding-top: 15px;
+    color: #564138;
+    font-weight: 600;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.info, .right-info {
+    line-height: 1.8em;
+    text-align: right;
+    padding-top: 15px;
+}
+
+.copyright {
+    text-align: center;
+    color:#564138;
+    padding: 10px 0;
+}
+
+/*SCHOLARSHIPS PAGE CSS CARLA!*/
+
+.banner-img {
+    background-image: url('../images/sub-banner.svg');
+    background-size: cover;
+    background-position: center;
+    height: 621px;
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* scholarship info section */
+
+.scholarship-info {
+    display: flex;
+    flex-direction: row;
+    background-color: #C6D8D3;
+    margin: 0 auto;
+    width: 1440px;
+    padding: 50px 0;
+    text-align: center;
+    color: #564138;
+}
+
+.bruce-lantz, .ed-bridges-memorial, .david-glynn {
+    padding: 60px;
+}
+
+.btn-app, .btn-sponsor, .btn-awardees {
+    background-color: #C6D8D3;
+    color: #564138;
+    padding: 10px 30px;
+    font-size: 1.0em;
+    border-radius: 54px;
+    border: 2px solid #EB5E55;
+    font-weight: bold;
+}
+
+.btn-app:hover, .btn-sponsor:hover, .btn-awardees:hover {
+    background-color: #EB5E55;
+    color: #C6D8D3;
+    transition: 0.3s;
+}
+
+/* scholarship integrity section */
+
+.scholarship-integrity-row {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 1440px;
+    text-align: center;
+}
+
+.scholarship-process {
+    background-color: rgba(215, 206, 178, 0.9);
+    padding: 50px 100px 50px 100px;
+    text-align: center;
+    justify-content: left;
+    color: #564138;
+}
+
+.mailto, .MailLink {
+    color: #564138;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.committee {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:rgba(235, 94, 85, 0.72);
+    padding: 50px 80px;
+    text-align: center;
+    justify-content: right;
+    color: #564138;
+
+}
+
+.committee-row1, .committee-row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 58px;
+}
